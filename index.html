@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Content</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            color: rgb(0, 0, 0);
+            background: #000; /* Warna latar belakang default */
+        }
+
+        /* Menonaktifkan pemilihan teks */
+        body {
+            user-select: none; /* Menonaktifkan pemilihan teks */
+        }
+
+        /* Menonaktifkan klik kanan */
+        body {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE/Edge */
+        }
+
+        body {
+            -webkit-touch-callout: none; /* Nonaktifkan panggilan ke menu saat menekan lama di perangkat sentuh */
+            -webkit-user-select: none; /* Nonaktifkan pemilihan teks pada perangkat sentuh */
+            -ms-user-select: none; /* Nonaktifkan pemilihan teks pada perangkat sentuh di IE */
+            user-select: none; /* Menonaktifkan pemilihan teks */
+        }
+
+        /* Container Utama */
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Menyusun konten ke bawah */
+            align-items: center;
+            padding-bottom: 120px; /* Mengangkat elemen ke atas (2cm = ~75px) */
+            background-image: url('bg.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Overlay untuk menggelapkan gambar */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Menggelapkan latar belakang */
+            z-index: -1;
+        }
+
+        /* Teks Utama */
+        .text-content {
+            margin-bottom: 20px; /* Jarak antara teks dan tombol */
+            text-align: center;
+        }
+
+        .text-content h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px; /* Jarak antar teks */
+        }
+
+        .text-content p {
+            font-size: 1rem;
+        }
+
+        /* Tombol di Bawah */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 300px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #000000; /* Warna hijau WhatsApp */
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button i {
+            margin-right: 10px; /* Jarak antara ikon dan teks */
+            font-size: 1.2rem;
+        }
+
+        .button-secondary {
+            background-color: #000000; /* Warna biru Telegram */
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .text-content h1 {
+                font-size: 1.3rem;
+            }
+
+            .text-content p {
+                font-size: 0.9rem;
+            }
+
+            .button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <script>
+        // Mencegah klik kanan di halaman
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Overlay untuk menggelapkan gambar -->
+        <div class="overlay"></div>
+
+        <!-- Teks di Atas Tombol -->
+        <div class="text-content">
+            <h1>PERSONAL PAGE</h1>
+            <p>Discover the mystery ⭐</p>
+        </div>
+
+        <!-- Tombol di Bawah Tengah -->
+        <div class="button-container">
+            <a href="https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO&cid=BOCAE_BINGUNG_CORO" class="button">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp 💖
+            </a>
+            <a href="https://vnanxl.llovesgreat.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=BOCAE_BINGUNG_CORO" class="button button-secondary">
+                <i class="fa-brands fa-telegram"></i> Exclusive Content ⭐
+            </a>
+        </div>
+    </div>
+</body>
+</html>
